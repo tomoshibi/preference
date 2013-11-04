@@ -1,0 +1,13 @@
+1.パッケージ管理ソフト「chocolatey」インストール
+　下記コマンドをコンソールで実行
+
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%systemdrive%\chocolatey\bin
+
+2.インストールパッケージ一覧
+
+'winmerge', 'ConEmu', 'putty', 'PDFXChangeViewer', 'mingw', 'vim', 'Firefox', 'GoogleChrome' | % { cinst $_ }
+
+
+
+
+
